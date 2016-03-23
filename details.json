@@ -12,7 +12,7 @@
             {
                 "name": "Alex Anderson",
                 "email": ""
-            }
+            },
             {
                 "name": "Blake Callens",
                 "email": ""
@@ -25,7 +25,7 @@
     },
     "settings": [
         {
-            "name": "disqus_shortname",
+            "name": "nodebb_host",
             "value": ""
         }
     ],
