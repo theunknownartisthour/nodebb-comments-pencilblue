@@ -19,6 +19,7 @@ Installation and Setup
 4. Add the ```^tmp_nodebb_comments^``` directive in your article template where you want the comments to appear.
 
 5. Add the ```^tmp_nodebb_comment_counts^``` directive at the bottom of pages where you want to display the comment counts for a list of articles.
-*** Note *** Comment counts are not supported yet...
+
+*** Note *** Comment counts are not supported on external pages yet....
 
 Code based on [https://github.com/pencilblue/disqus-pencilblue](https://github.com/pencilblue/disqus-pencilblue)
