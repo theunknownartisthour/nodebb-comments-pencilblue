@@ -18,13 +18,17 @@
 module.exports = function(pb) {
 
     /**
-     * DisqusComments - Add Disqus comments to your articles
+     * NodeBBComments - Add NodeBB comments to your articles
      * look like.
      *
+     * Code Based Off of Disqus Comments Plugin By:
      * @author Blake Callens blake@pencilblue.org>
      * @copyright 2014 PencilBlue, LLC
+     * 
+     * @author Alex Anderson
+     * @copyright 2016
      */
-    function DisqusComments(){}
+    function NodeBBComments(){}
 
     /**
      * Called when the application is being installed for the first time.
@@ -32,7 +36,7 @@ module.exports = function(pb) {
      * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
      * The result should be TRUE on success and FALSE on failure
      */
-    DisqusComments.onInstall = function(cb) {
+    NodeBBComments.onInstall = function(cb) {
         cb(null, true);
     };
 
@@ -44,7 +48,7 @@ module.exports = function(pb) {
      * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
      * The result should be TRUE on success and FALSE on failure
      */
-    DisqusComments.onUninstall = function(cb) {
+    NodeBBComments.onUninstall = function(cb) {
         cb(null, true);
     };
 
@@ -56,10 +60,10 @@ module.exports = function(pb) {
      * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
      * The result should be TRUE on success and FALSE on failure
      */
-    DisqusComments.onStartup = function(cb) {
-        pb.TemplateService.registerGlobal('disqus_shortname', function(flag, cb) {
+    NodeBBComments.onStartup = function(cb) {
+        pb.TemplateService.registerGlobal('nodebb_host', function(flag, cb) {
             var pluginService = new pb.PluginService();
-            pluginService.getSetting('disqus_shortname', 'disqus-pencilblue', cb);
+            pluginService.getSetting('nodebb_host', 'nodebb-comments-pencilblue', cb);
         });
 
         cb(null, true);
@@ -72,10 +76,10 @@ module.exports = function(pb) {
      * @param cb A callback that must be called upon completion.  cb(Error, Boolean).
      * The result should be TRUE on success and FALSE on failure
      */
-    DisqusComments.onShutdown = function(cb) {
+    NodeBBComments.onShutdown = function(cb) {
         cb(null, true);
     };
 
     //exports
-    return DisqusComments;
+    return NodeBBComments;
 };
