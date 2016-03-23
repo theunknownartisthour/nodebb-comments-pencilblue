@@ -20,3 +20,5 @@ Installation and Setup
 
 5. Add the ```^tmp_nodebb_comment_counts^``` directive at the bottom of pages where you want to display the comment counts for a list of articles.
 *** Note *** Comment counts are not supported yet...
+
+Code based on [https://github.com/pencilblue/disqus-pencilblue](https://github.com/pencilblue/disqus-pencilblue)
