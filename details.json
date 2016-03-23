@@ -1,7 +1,7 @@
 {
-    "uid": "disqus-pencilblue",
-    "name": "Disqus Comments",
-    "description": "Add Disqus comments to your articles.",
+    "uid": "nodebb-comments-pencilblue",
+    "name": "NodeBB Comments",
+    "description": "Add NodeBB comments to your articles.",
     "version": "0.2.0",
     "pb_version": "0.5.x",
     "author": {
@@ -10,13 +10,17 @@
         "website": "http://pencilblue.org",
         "contributors": [
             {
+                "name": "Alex Anderson",
+                "email": ""
+            }
+            {
                 "name": "Blake Callens",
                 "email": ""
             },
             {
                 "name": "Brian Hyder",
                 "email": ""
-            }
+            },
         ]
     },
     "settings": [
@@ -32,6 +36,6 @@
         "ACCESS_MANAGING_EDITOR": []
     },
     "main_module": {
-        "path": "disqus.js"
+        "path": "nodebbcomments.js"
     }
 }
