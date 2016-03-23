@@ -1,0 +1,18 @@
+<a id="nodebb/comments"></a>
+<script type="text/javascript">
+var nbb = {};
+nbb.url = '//^nodebb_host^'; // EDIT THIS
+nbb.cid = 1;    // OPTIONAL. Forces a Category ID in NodeBB.
+                //  Omit it to fallback to specified IDs in the admin panel.
+
+(function() {
+nbb.articleID = '^article_id^'; nbb.title = '^article_headline_nolink^';
+nbb.tags = [];
+nbb.script = document.createElement('script'); nbb.script.type = 'text/javascript'; nbb.script.async = true;
+nbb.script.src = nbb.url + '/plugins/nodebb-plugin-blog-comments/lib/ghost.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(nbb.script);
+})();
+</script>
+<!--TODO Generate Post's markdown or spit out the Article's HTML below (markdown does use html so that'll be fine-->
+<script id="nbb-markdown" type="text/markdown">{{{../post.markdown}}}</script>
+<noscript>Please enable JavaScript to view comments</noscript>
