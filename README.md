@@ -6,7 +6,7 @@
 Installation and Setup
 -----
 
-1. Clone the disqus-pencilblue repository into the plugins folder of your PencilBlue installation
+1. Clone the nodebb-comments-pencilblue repository into the plugins folder of your PencilBlue installation
   ```shell
   cd [pencilblue_directory]/plugins
   git clone https://github.com/theunknownartisthour/nodebb-comments-pencilblue.git
